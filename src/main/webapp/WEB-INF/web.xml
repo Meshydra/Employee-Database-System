@@ -2,16 +2,56 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Employee Database System</display-name>
   <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
-    <display-name>EmployeeServlet</display-name>
-    <servlet-name>EmployeeServlet</servlet-name>
-    <servlet-class>myServlets.EmployeeServlet</servlet-class>
+    <display-name>viewEmployees</display-name>
+    <servlet-name>viewEmployees</servlet-name>
+    <servlet-class>myServlets.viewEmployees</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>EmployeeServlet</servlet-name>
-    <url-pattern>/EmployeeServlet</url-pattern>
+    <servlet-name>viewEmployees</servlet-name>
+    <url-pattern>/viewEmployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>createEmployees</display-name>
+    <servlet-name>createEmployees</servlet-name>
+    <servlet-class>myServlets.createEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createEmployees</servlet-name>
+    <url-pattern>/createEmployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>deleteEmployees</display-name>
+    <servlet-name>deleteEmployees</servlet-name>
+    <servlet-class>myServlets.deleteEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteEmployees</servlet-name>
+    <url-pattern>/deleteEmployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>updateEmployees</display-name>
+    <servlet-name>updateEmployees</servlet-name>
+    <servlet-class>myServlets.updateEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateEmployees</servlet-name>
+    <url-pattern>/updateEmployees</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>searchEmployees</display-name>
+    <servlet-name>searchEmployees</servlet-name>
+    <servlet-class>myServlets.searchEmployees</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchEmployees</servlet-name>
+    <url-pattern>/searchEmployees</url-pattern>
   </servlet-mapping>
 </web-app>
